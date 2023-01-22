@@ -10,12 +10,14 @@ import logging
 
 import requests
 
+from config import api_key
+
 
 app = Flask(__name__)
 
 app.config.update(SECRET_KEY = 'lkljiop')
 
-openai.api_key = "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"
+openai.api_key = api_key
 
 logging.basicConfig(level=logging.INFO)
 
