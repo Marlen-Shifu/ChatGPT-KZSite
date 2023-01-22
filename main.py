@@ -32,9 +32,9 @@ def search():
 
 @app.route('/answer/<string:question>')
 def answer(question):
-    # res = generate_response(question)
+    res = generate_response(question)
 
-    return render_template('answer.html', question = question, answer = "Lorem ipsum dolores pamv has aia adaadakbd adakb iadoajaldnk ajoisa oso fhaos nf;i hqwo")
+    return render_template('answer.html', question = question, answer = res)
 
 
 def request_recieved(methods = ['GET']):
