@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 app.config.update(SECRET_KEY = 'lkljiop')
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 logging.basicConfig(level=logging.INFO)
 
